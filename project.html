@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple-Home Clone</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+.nav {
+  background: rgba(0,0,0,0.85);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  gap: 40px;
+}
+
+.hero img {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-size: 22px;
+  margin: 10px 0 20px;
+}
+
+.links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 18px;
+}
+
+.dark {
+  background: #000;
+  color: #fff;
+}
+
+.light {
+  background: #f5f5f7;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px 8%;
+}
+
+.product-card {
+  background: #f5f5f7;
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.product-card:hover h2 {
+  color: #0071e3;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 12px;
+  color: #666;
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <ul class="nav-links">
+      <li class="logo"></li>
+      <li>Store</li>
+      <li>Mac</li>
+      <li>iPad</li>
+      <li>iPhone</li>
+      <li>Watch</li>
+      <li>Support</li>
+    </ul>
+  </nav>
+
+  <section class="hero dark">
+    <div class="hero-text">
+      <h1>iPhone 17 Pro </h1>
+      <p>Pro power. Pro design.</p>
+      <div class="links">
+        <a href="#">Learn more ›</a>
+        <a href="#">Buy ›</a>
+      </div>
+    </div>
+    <img src="https://www.apple.com/newsroom/images/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max/article/Apple-iPhone-17-Pro-cosmic-orange-250909_inline.jpg.large.jpg" alt="Phone">
+  </section>
+
+  <section class="hero light">
+    <div class="hero-text">
+      <h1>Macbook Pro</h1>
+      <p>Supercharged for creators.</p>
+      <div class="links">
+        <a href="#">Learn more ›</a>
+        <a href="#">Buy ›</a>
+      </div>
+    </div>
+    <img src="https://www.apple.com/v/macbook-pro/av/images/overview/welcome/hero_endframe__e4ls9pihykya_xlarge.jpg" alt="Laptop">
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-air-storage-select-202405-13inch-space-gray-wifi_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=80&.v=TENLTVRoeFdHUUI5ZE1ZZmxpQUlNMm5pQUoxb0NIVEJFSjRVRzZ4dzV5VE52YTlHWkltOWpNQVF4Y3VwTzdmWGl1WEttbFlFejZ0L0VqVlhGc0pKT3BmbTBuZmdjbmVyUEN6U1pnb2VjUDh3Qjhvd1BnZkhnUFFYU1JJMGh5alFTUzBLNXZ0QTA0SmlDNU1IU2czNjMzNXFNVzc5YkZmK2I4YzJ4ZndkZUdj&traceId=1">
+      <h2>Tablet Air</h2>
+      <p>Light. Fast. Powerful.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7_hero_09142021_big.jpg.large.jpg">
+      <h2>Smart Watch</h2>
+      <p>Health on your wrist.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-3-hero-select-202509_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1758077264181">
+      <h2>Air Pods</h2>
+      <p>Pure immersive sound.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/homepod-select-202210_FMT_WHH?wid=640&hei=600&fmt=jpeg&qlt=90&.v=Q1RBQitMYmJvQlQ1STVESXY1WlV2UHpjMkwxYU8rbXJpUkFjQlJDOEdId21kWFdyUmdaSDBPOWtrUUs1Q1BGR3VUb3VPa2FUZVhQMFhDQnVBMWhwQTdMd09oclphb09tVUFNSEdpQmlqb0E">
+      <h2>Home Speaker</h2>
+      <p>Room-filling audio.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright © 2025 Example Inc. All rights reserved.</p>
+    <p>Tarun Kumar</p>
+  </footer>
+
+</body>
+</html>
